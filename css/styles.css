@@ -1,0 +1,12 @@
+#hidden {
+  display: none;
+}
+
+.place {
+  cursor: pointer;
+  color: #0044cc;
+}
+
+.place:hover {
+  text-decoration: underline;
+}

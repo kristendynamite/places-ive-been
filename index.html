@@ -11,30 +11,43 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h2>Enter your name:</h2>
-          <form id="formName">
-            <label for="name"></label>
-            <input type="text" name="name" class="form-control" id="name">
-
+          <form id="formOne">
             <h2>Enter a place you've been:</h2>
-            <label for="place"></label>
-            <input type="text" name="place" class="form-control" id="place">
+            <label for="new-place"></label>
+            <input type="text" name="new-place" class="form-control" id="new-place">
 
             <h2>When did you go?</h2>
-            <label for="date"></label>
-            <input type="text" name="date" class="form-control" id="date">
+            <label for="new-date"></label>
+            <input type="text" name="new-date" class="form-control" id="new-date">
 
             <h2>What did you see?</h2>
-            <label for="see"></label>
-            <input type="text" name="see" class="form-control"
-            id="see">
+            <label for="new-see"></label>
+            <input type="text" name="new-see" class="form-control"
+            id="new-see">
 
             <h2>Would you recommend someone else to visit?</h2>
-            <label for="recommend"></label>
-            <input type="text" name="recommend" class="form-control" id="recommend">
+            <label for="new-recommend"></label>
+            <input type="text" name="new-recommend" class="form-control" id="new-recommend">
 
             <button type="submit" name="btn">Submit</button>
           </form>
+
+          <div id="hidden">
+            <ul>
+              <p>Places I've been:</p>
+            </ul>
+            <div class="col-md-6">
+
+              <div id="show-places">
+                <h2></h2>
+
+                <p>Place I've been:<span class="place"></span></p>
+                <p>Date I visited:<span class="date"></span></p>
+                <p>What I saw:<span class="see"></span></p>
+                <p>Would I recommend?<span class="recommend"></span></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
