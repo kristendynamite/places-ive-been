@@ -1,12 +1,12 @@
-#hidden {
+#show-hidden {
   display: none;
 }
 
-.place {
+.Information {
   cursor: pointer;
-  color: #0044cc;
+  color: blue;
 }
 
-.place:hover {
+.Information:hover {
   text-decoration: underline;
 }

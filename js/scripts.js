@@ -1,5 +1,5 @@
 //business logic
-function information(place, date, see, recommend) {
+function Information(place, date, see, recommend) {
   this.place = place;
   this.date = date;
   this.see = see;
@@ -9,7 +9,7 @@ function information(place, date, see, recommend) {
 //user interface logic
 
 $(function() {
-  $("form#formOne").submit(function(event) {
+  $("form#form-information").submit(function(event) {
     event.preventDefault();
 
     var inputtedPlace = $("input#new-place").val();
@@ -19,7 +19,15 @@ $(function() {
 
     var newInformation = new Information(inputtedPlace, inputtedDate, inputtedSee, inputtedRecommend);
 
-    $("ul#hidden").append("<li><span class='information'>" + newInformation + "</span></li>");
+    $("ul#hidden").append("<li><span class='Information'>" + newInformation.place + "</span></li>");
+
+    $(".Information").last().click(function() {
+      $("#show-hidden").show();
+      $("#show-hidden h3").text(newInformation.place);
+      $(".date").text(newInformation.date);
+      $(".see").text(newInformation.see);
+      $(".recommend").text(newInformation.recommend);
+    });
 
     $("input#new-place").val("");
     $("input#new-date").val("");

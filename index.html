@@ -11,41 +11,40 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <form id="formOne">
-            <h2>Enter a place you've been:</h2>
-            <label for="new-place"></label>
-            <input type="text" name="new-place" class="form-control" id="new-place">
+          <h2>Where have you been?:</h2>
+          <form id="form-information">
+            <div class="form-group">
+              <label for="new-place">Place</label>
+              <input type="text" class="form-control" id="new-place">
+            </div>
+            <div class="form-group">
+              <label for="new-date">When did you go?</label>
+              <input type="text" class="form-control" id="new-date">
+            </div>
 
-            <h2>When did you go?</h2>
-            <label for="new-date"></label>
-            <input type="text" name="new-date" class="form-control" id="new-date">
+            <div class="form-group">
+              <label for="new-see">What did you see?</label>
+              <input type="text" class="form-control" id="new-see">
+            </div>
 
-            <h2>What did you see?</h2>
-            <label for="new-see"></label>
-            <input type="text" name="new-see" class="form-control"
-            id="new-see">
-
-            <h2>Would you recommend someone else to visit?</h2>
-            <label for="new-recommend"></label>
-            <input type="text" name="new-recommend" class="form-control" id="new-recommend">
+            <div class="form-group">
+              <label for="new-recommend">Would you recommend someone else to visit?</label>
+              <input type="text" class="form-control" id="new-recommend">
+            </div>
 
             <button type="submit" name="btn">Submit</button>
           </form>
 
-          <div id="hidden">
-            <ul>
-              <p>Places I've been:</p>
-            </ul>
-            <div class="col-md-6">
+          <h2>Places I've Been:</h2>
+          <ul id="hidden">
 
-              <div id="show-places">
-                <h2></h2>
-
-                <p>Place I've been:<span class="place"></span></p>
-                <p>Date I visited:<span class="date"></span></p>
-                <p>What I saw:<span class="see"></span></p>
-                <p>Would I recommend?<span class="recommend"></span></p>
-              </div>
+          </ul>
+          <div class="col-md-6">
+            <div id="show-hidden">
+              <h2></h2>
+              <p>Date I visited: <span class="date"></span></p>
+              <p>What I saw: <span class="see"></span></p>
+              <p>Would I recommend? <span class="recommend"></span></p>
             </div>
           </div>
         </div>
